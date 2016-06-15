@@ -4,7 +4,7 @@
 #
 #install.packages("ggplot2")
 #install.packages("plyr")
-#install.packages("splitstackshape")
+install.packages("splitstackshape")
 
 =============================
   
@@ -15,10 +15,10 @@ require(splitstackshape)
 
 
 #set working directory
-setwd("**your directory here**")
+setwd("/Users/sr320/git-repos/RobertsLab-OluridaSurvey2014/sandbox")
 
 #reads in growth rate data
-grate<-read.csv("./data/ImageJ-size-data-2013-2014.csv",header=T)
+grate<-read.csv("../data/ImageJ-size-data-2013-2014.csv",header=T)
 
 #formats data frame to work with plyr and ggplot2
 grate1<-cSplit(grate, "Tray", sep=" ", drop=F)
