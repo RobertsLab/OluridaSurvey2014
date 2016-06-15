@@ -16,21 +16,18 @@ require(ggplot2)
 require(dispmod)
 
 #set working directory
-setwd("**your directory here**")
+setwd("/Users/sr320/git-repos/RobertsLab-OluridaSurvey2014/sandbox")
 
 #reads in data csv
-drill<-read.csv("./data/Drill-mortality-2013-2014.csv",header=T)
+drill<-read.csv("../data/Drill-mortality-2013-2014-consolidated.csv",header=T)
 
 #tells R to register date notation as Dates
 drill$Date<-as.factor(as.Date(drill$Date, "%m/%d/%Y"))
 
 #creates summary of all drill data
-drsum<-ddply(drill,.(Date,Pop),summarise,drill1shell=sum(Drill.1.Shell,na.rm=T),
-             drill2shell=sum(Drill.2.shell,na.rm=T),
-             nodrill1shell=sum(No.Drill.1,na.rm=T),
-             nodrill2shell=sum(No.Drill.2,na.rm=T),
-             drills=(drill1shell/2+drill2shell),
-             nodrills=(nodrill1shell/2+nodrill2shell),
+drsum<-ddply(drill,.(Date,Pop),summarise,
+             drills=sum(Drill,na.rm=T),
+             nodrills=sum(NoDrill,na.rm=T),
              N=round(drills+nodrills),
              prop=(drills/N))
 
