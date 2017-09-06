@@ -16,7 +16,7 @@ require(ggplot2)
 require(dispmod)
 
 #set working directory
-setwd("/Users/sr320/git-repos/RobertsLab-OluridaSurvey2014/sandbox")
+setwd("**insert working directory here**")
 
 #reads in data csv
 drill<-read.csv("../data/Drill-mortality-2013-2014-consolidated.csv",header=T)

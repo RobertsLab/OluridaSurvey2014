@@ -15,7 +15,7 @@ require(splitstackshape)
 
 
 #set working directory
-setwd("/Users/sr320/git-repos/RobertsLab-OluridaSurvey2014/sandbox")
+setwd("**insert working directory here**")
 
 #reads in growth rate data
 grate<-read.csv("../data/ImageJ-size-data-2013-2014.csv",header=T)
