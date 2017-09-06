@@ -32,6 +32,7 @@ drsum<-ddply(drill,.(Date,Pop),summarise,
              prop=(drills/N))
 
 #creates bargraph plot to visualize drill data
+tiff(file = "drillmort.tiff", units="in", width=10, height=10, res = 600)
 ggplot(drsum,aes(x=Date,y=prop,colour=Pop, fill=Pop))+
   geom_bar(stat="identity",position=position_dodge())+
   geom_text(aes(label=N), color="black",
@@ -56,7 +57,7 @@ ggplot(drsum,aes(x=Date,y=prop,colour=Pop, fill=Pop))+
         axis.title.y=element_text(size=20),
         legend.title=element_text(size=20),
         legend.text=element_text(size=20)) 
-  
+dev.off()  
 
 #runs a general linear model on drill data
 drglm<-glm((cbind(round(drills),round(nodrills)))~Pop,family=binomial(logit),data=drsum)
