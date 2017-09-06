@@ -4,7 +4,7 @@ require(plyr)
 require(ggplot2)
 
 #set working directory to local copy of repository
-setwd<-("**your directory here**")
+setwd("**your directory here**")
 
 daby1edit<-read.csv("./data/Dabob-temp-2014.csv")
 #reads in edited CSV with raw data.
