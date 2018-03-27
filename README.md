@@ -54,7 +54,7 @@ OysterBay-temp-2014.csv -  raw temperature data for Oyster Bay
 Size-outplant-end-all-2013-14.csv  -  raw size data for outplant oysters and for Year 1 terminal sampling 
           
 --- 
-** Files Contained in _script_ directory**
+**Files Contained in _script_ directory**
 
 Figure002-003-temperature-plots.R  -  R script to create minimum and maximum temperature graphs for all 4 sites combined.
 
