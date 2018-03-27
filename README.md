@@ -1,9 +1,9 @@
 _Ostrea lurida_ Survey - Puget Sound, WA - 2014
 =====================
 
-This repository includes raw data and R scripts used to generate figures for Heare et al. "[**Evidence of _Ostrea lurida_ population structure in Puget Sound, WA**](https://peerj.com/preprints/704v1/)" 
+This repository includes raw data and R scripts used to generate figures for Heare et al. "[**Evidence of _Ostrea lurida_ population structure in Puget Sound, WA**](https://doi.org/10.1111/maec.12458)" 
 ```
-Heare JE, Blake B, Davis JP, Vadopalas B, Roberts SB. (2015) Evidence of Ostrea lurida (Carpenter 1894) population structure in Puget Sound, WA. PeerJ PrePrints 2:e704v1 http://dx.doi.org/10.7287/peerj.preprints.704v1
+Jake Emerson Heare, Brady Blake, Jonathan P Davis, Brent Vadopalas, Steven Roberts (2017) Evidence of Ostrea lurida Carpenter, 1864 population structure in Puget Sound, WA Marine Ecology 38:e12458 doi: 10.1111/maec.12458
 ```
 
 Specific release that is supplemental to the manuscript - [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.30372.svg)](http://dx.doi.org/10.5281/zenodo.30372)
@@ -23,7 +23,7 @@ If everything works right you should create the figures in the manuscript!
 
 ---
 
-##File Desciptions
+## File Desciptions
 
 **Files Contained in _data_ directory**
 
@@ -54,7 +54,7 @@ OysterBay-temp-2014.csv -  raw temperature data for Oyster Bay
 Size-outplant-end-all-2013-14.csv  -  raw size data for outplant oysters and for Year 1 terminal sampling 
           
 --- 
-**Files Contained in _script_ directory**
+** Files Contained in _script_ directory**
 
 Figure002-003-temperature-plots.R  -  R script to create minimum and maximum temperature graphs for all 4 sites combined.
 
